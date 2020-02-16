@@ -40,7 +40,7 @@ class fabricDrive extends Contract {
             
        await ctx.stub.putState(userId, Buffer.from(JSON.stringify(userData))); 
        console.log('Account Registered Succesfully.."');
-       return('Account registered succesfully. Start uploading your files into decentralized Storage, They live here forever.');
+       return('Account Created Successfully. Start Adding Songs..');
      }
     else {
      return('Error:Username is Taken.! Choose Another one.')
@@ -67,7 +67,7 @@ class fabricDrive extends Contract {
 
      await ctx.stub.putState(userId, Buffer.from(JSON.stringify(user))); 
      console.log('File Uploaded Succesfully..');
-     return('File Uploaded to Ledger Succesfully..'); 
+     return('Song Added to your Library.'); 
       }
   }
 
